@@ -1,8 +1,8 @@
 # LCD_FPGA
-It's a GitHub for LCD on FPGA (DE2115), the code clearly separates the combinational logic and sequential logic. Easy to understand.
+### It's a GitHub for LCD on FPGA (DE2115), the code clearly separates the combinational logic and sequential logic. Easy to understand.
 You don't need to process logic in the sequential logic that takes a longer time to synthesize, just modify the logic in the combinational logic.
 
-There are two ways to handle the busy flag
+### There are two ways to handle the busy flag
 - Receive the LCDdata[7], if it is 0, it means you can move on.
 - Ignore the Busy flag, but make sure you have waited enough time to move on. It takes longer to handle than the first way.
 The code take both of these ways to show how to handle LCD busy flag, hope it can help you handle the trouble.
