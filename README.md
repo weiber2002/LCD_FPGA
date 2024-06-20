@@ -11,19 +11,19 @@ Every time we need to refresh these commands, so you can see it in the every beg
 
 localparam [69:0] initialize = {
     // wait 15 ms
-    10'b0000110000, // Function set
+- 10'b0000110000, // Function set
     // wait 4.1 ms
-    10'b0000110000, // Function set
+- 10'b0000110000, // Function set
     // wait 100 us
-    10'b0000110000, // Function set
+- 10'b0000110000, // Function set
     // wait busy flag
-    10'b0000111000,  // Function set
+- 10'b0000111000,  // Function set
     // wait busy flag
-    10'b0000001100,// Display on 
+- 10'b0000001100,// Display on 
     // wait busy flag
-    10'b0000000001, // Clear display
+- 10'b0000000001, // Clear display
     // wait busy flag
-    10'b0000000110 // Entry mode set
+- 10'b0000000110 // Entry mode set
     // initial done
 };
 
